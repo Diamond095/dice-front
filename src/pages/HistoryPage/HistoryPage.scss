@@ -1,0 +1,30 @@
+.HistoryPageWrapper {
+	margin: 1rem;
+	overflow-y: scroll;
+	height: 62vh;
+}
+
+.switch {
+	display: flex;
+	justify-content: center;
+	margin:0 5vw;
+	background: #182227;
+	border-radius: 2.5vw;
+
+	.switch-element {
+		padding: 1.3vh;
+		background-color: #182227;
+		text-align: center;
+		flex: 1;
+	}
+	.right{
+		border-radius: 2.5vw 0 0 2.5vw;
+	}
+	.left{
+		border-radius: 0 2.5vw 2.5vw 0;
+	}
+	.selected{
+		background: #3F9CDA;
+		border-radius: 2.5vw;
+	}
+}

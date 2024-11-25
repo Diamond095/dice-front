@@ -1,0 +1,47 @@
+.HistoryGameWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+  .gameNumber{
+    top: 60px;
+    font-size: 20px;
+    left:28vw;
+    color:rgb(255 255 255 / 10%);
+    z-index: 1;
+    text-align: center;
+  }
+  .extra-text{
+    width:27vw;
+    font-size: 14px;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
+
+  }
+  .nickname{
+    width: 27vw;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .left{
+    text-align: left;
+  }
+  .right{
+    text-align: right;
+  }
+  .points{
+    width: 20vw;
+    margin-top: -13px;
+    font-size: 20px;
+    margin: 1.4vh 1.4vh 0.5vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    .swords{
+      width: 4vw;
+    }
+  }
+}
+

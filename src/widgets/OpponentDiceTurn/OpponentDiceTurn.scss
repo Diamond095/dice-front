@@ -1,0 +1,21 @@
+.OpponentDiceContainer {
+  position: absolute;
+  top: 0vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  transition: top 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  z-index: 2;
+
+  &.show {
+    top: 10%;
+    opacity: 1;
+  }
+
+  &.reset {
+    display: flex;
+    opacity: 0;
+    top: 0vh;
+  }
+}

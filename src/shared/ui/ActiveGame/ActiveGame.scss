@@ -1,0 +1,52 @@
+.ActiveGameWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 0.25vh;
+  flex-direction: column;
+
+  .ActiveGame--number {
+    font-size: 1.5rem;
+    color: rgba(#fff, 0.15);
+  }
+
+  .ActiveGame--button {
+	width: 30vw;
+  height: 4.5vh;
+  }
+
+  .ActiveGame--details {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    justify-content: space-between;
+	align-items: center;
+
+    .ActiveGame--user {
+      color: rgba(#fff, 0.6);
+      width: 26vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .ActiveGame--bet {
+      color: rgba(#fff, 0.6);
+    }
+  }
+
+  .ActiveGame--play-button {
+    background-color: #e9a019;
+    color: #000;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #d88c0f;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+export {default as OpponentDice } from './OpponentDice'

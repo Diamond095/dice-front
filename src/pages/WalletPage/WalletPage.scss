@@ -1,0 +1,106 @@
+.WalletPageWrapper {
+  margin: 1rem;
+
+  .wallet-page__connect-button button {
+    width: calc(100vw - 2rem);
+    background: #3F9CDA;
+    border-radius: 1rem;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+
+    svg {
+      display: none;
+    }
+
+    div[data-tc-text] {
+      font-size: 1.25rem;
+      font-weight: normal;
+    }
+    .go1651228014{
+      color:#fff;
+    }
+  }
+
+  .WalletPage_tokens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5vh 0;
+
+    .TokenTon {
+      background-image: url("../../app/assets/WALLET_TON.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .TokenM5{
+      background-image: url("../../app/assets/m5_wallet.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .TokenDfc{
+      background-image: url("../../app/assets/WALLET_DFC.png");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+    .Token {
+      width: calc(50% - 0.5rem);
+      aspect-ratio: 1;
+      display: flex;
+      justify-content: start;
+      align-items: end;
+      padding: 1rem;
+      box-sizing: border-box;
+      background-color: #182227;
+      border-radius: 1.25rem;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .WalletPage_wallet-text {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: #E92E38;
+  }
+
+  .wallet-page__back-button {
+    position: absolute;
+    bottom: 3vh;
+    width: calc(100% - 2rem);
+  }
+
+  .wallet-page__tabs {
+    .wallet-page__tab-list {
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      background:#182227;
+      display: flex;
+      list-style-type: none;
+      border-radius: 1rem;
+      margin-bottom: 3vh;
+
+      .wallet-page__tab {
+        flex: 1;
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        font-weight: bold;
+        gap: 0.5rem;
+
+        &:focus {
+          outline: none;
+        }
+
+        &--selected {
+          background: #3F9CDA;
+        }
+      }
+    }
+  }
+}

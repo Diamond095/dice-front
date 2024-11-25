@@ -1,0 +1,76 @@
+.DepositPageWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-top: 12vh;
+
+  .WalletPage_wallet-text {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: E92E38;
+    padding: 0 1rem;
+  }
+
+  .DepositForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #182227;
+    padding: 1rem;
+    border-radius: 1.25rem;
+    margin-top: 2vh;
+
+    .DepositInput {
+      background: #242539;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+    }
+
+    .Deposit_quick {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+
+      button {
+        background: #242639;
+        color: white;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        flex: 1;
+      }
+    }
+  }
+}
+
+.DepositPage__navigation {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 3vh;
+  gap: 2vw;
+  justify-content: center;
+  width: calc(100% - 2rem);
+  margin: 0 1rem;
+  height: 5vh;
+
+  .DepositButton {
+    background: #3F9CDA;
+    height: 6.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    border-radius: 0.75rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .DepositPage__navigation-back {
+    flex: 1;
+  }
+}

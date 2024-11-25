@@ -1,0 +1,30 @@
+.secondary-buttons {
+  font-size: 2.6vh;
+  display: grid;
+  gap: 1.4vh;
+  margin: 0 auto;
+  .button {
+    display: grid;
+    border-radius: 1.25rem;
+    background-color: #182227;
+    align-items: center;
+    height: calc(12.5vh - 6px);
+    width: 21vw;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.0509803922) inset;
+  }
+}
+
+.react-modal-sheet-header {
+  background:#182227;
+}
+.react-modal-sheet-content {
+  background:#182227;
+  padding: 1rem 1.5rem;
+  overflow-y: auto;
+
+  .rules-text {
+      display: flex;
+      flex-direction: column;
+  }
+}

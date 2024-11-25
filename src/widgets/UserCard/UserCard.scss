@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+.info{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+.field{
+    padding: 0.4rem;
+    width: 17vw;
+}
+.name {
+    width: 30vw;
+    z-index: 2;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.place{
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    width: 8vw;
+    text-align: center;
+    font-style: normal;
+  }

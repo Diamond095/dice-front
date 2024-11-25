@@ -1,0 +1,21 @@
+.MyDiceContainer {
+  position: absolute;
+  bottom: 0vh;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  transition: bottom 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  z-index: 2;
+
+  &.show {
+    bottom: 10%;
+    opacity: 1;
+  }
+
+  &.reset {
+    display: flex;
+    opacity: 0;
+    bottom: 0vh;
+  }
+}

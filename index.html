@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <title>Dice</title>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="module">
+    import { Buffer } from "buffer";
+    window.Buffer = Buffer;
+    window.Telegram.WebApp.expand();
+    window.Telegram.WebApp.setBackgroundColor("#0D1417");
+    window.Telegram.WebApp.setHeaderColor("#0D1417");
+  </script>
+  
+  <script type="module" src="/src/app/main.tsx"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

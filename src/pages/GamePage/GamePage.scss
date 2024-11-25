@@ -1,0 +1,126 @@
+.GamePageContainer {
+  padding: 1rem 0;
+}
+
+.result{
+  position: absolute;
+  top:48%;
+  width:100%;
+  height: 9vh;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  .result-text{
+    margin: auto;
+    font-size: 32px;
+
+  }
+}
+.timer{
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  width: 48vw;
+  justify-content: space-around;
+  align-items: center;
+}
+.top{
+  display: flex;
+  justify-content: space-around;
+  width: 90vw;
+  margin: auto;
+}
+.whose-turn{
+  font-size: 16px;
+
+}
+.GamePageWrapper {
+  margin: 1rem;
+  border-radius: 1.25rem;
+  border: 3px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  background: url('../../app/assets/FieldBackground.jpg') padding-box, linear-gradient(180deg, #911c22, #255e83) border-box;
+  box-shadow: inset 0px 1px 2px 0px rgba(255, 255, 255, 0.0509803922);
+  background-size: 100%;
+  .Game--header {
+    display: flex;
+    height: 6vh;
+
+    .Game--round-number {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #E92E38;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+
+    .Game--opponent-username {
+      flex: 1;
+      display: flex;
+      background: linear-gradient(-90deg, #0d0e17 0%, #11121c 100%);
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 1rem;
+      border-top-right-radius: 0.85rem;
+      color: #E92E38;
+      font-size: 1.25rem;
+      z-index: 0;
+      font-weight: bold;
+      border: solid 3px #911c22;
+      border-right: none;
+      border-top: none; 
+    }
+  }
+
+  .Game--body {
+    height: 58vh;
+    position: relative;
+    z-index: 1;
+
+    .MySum {
+      display: flex;
+      background: linear-gradient(90deg, #0d0e17 0%, #11121c 100%);
+      width: 50%;
+      height: 6vh;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.25rem;
+      color: #3F9CDA;
+      position: absolute;
+      bottom: 0;
+      border-top-right-radius: 1.25rem;
+      border-bottom-left-radius: 0.85rem;
+      z-index: 0;
+      font-weight: bold;
+      border: solid 3px #255e83;
+      border-left: none;
+      border-bottom: none; 
+    }
+  }
+
+  .Game--navigation {
+    position: absolute;
+    bottom: 6vh;
+    width: calc(100% - 2rem);
+    .Game--throw-button {
+
+      width: calc(100%);
+      height: 6vh;
+      border-radius: 0.75rem;
+      background: #3F9CDA;
+      color: #0b0c15;
+      font-size: 1.25rem;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: white;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}

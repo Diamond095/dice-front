@@ -1,0 +1,82 @@
+.back{
+    position: absolute;
+    bottom: 0;
+    width: 90vw;
+    left: 5vw;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 6.5vh;
+	border: 1px solid #3F9CDA;
+	border-radius: 0.75rem;
+	background: transparent;
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.dice-purple {
+    width:35%;
+    position: relative;
+    top: 10%;
+    left: 75%;
+}
+
+.dice-dark-blue {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+.dice-blue {
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
+
+.dice-red {
+    width: 45%;
+    position: absolute;
+    top: 45%;
+    left: -16%;
+}
+
+.dice-pink {
+    width: 27%;
+    position: relative;
+    top: 10%;
+    left: 82%;
+}
+.headers{
+    position: relative;
+    top: 40%;
+}
+.waiting{
+    overflow: hidden;
+   position: relative;
+   height: 84vh;
+}
+
+.main-header{
+    color:#E92E38;
+    text-align: center;
+    font-size: 8vw;
+    font-weight: 600;
+    text-shadow: 0 0 70px rgb(255, 255, 255);
+}
+.common-header{
+    text-align: center;
+    font-size: 4vw;
+    text-shadow: 0 0 70px rgb(255, 255, 255);
+}
+.messange{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    bottom: 11%;
+    width: 90%;
+    left:5%;
+    position: absolute;
+}

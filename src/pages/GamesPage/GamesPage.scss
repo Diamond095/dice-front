@@ -1,0 +1,14 @@
+.GamesPageWrapper {
+  margin: 1rem;
+  height: 70vh;
+  overflow-y: scroll;
+  border-radius: 1.25rem;
+  overflow-y: scroll;
+	height: 65vh;
+
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

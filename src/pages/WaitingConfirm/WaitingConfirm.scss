@@ -1,0 +1,32 @@
+
+.waiting-confirm{
+    margin: 6vw;
+    margin-top: 21vh;
+    display: flex;
+    flex-direction: column;
+    gap: 38vh;
+
+    .dice-dark{
+        position: absolute;
+        width: 40vw;
+        bottom: 20%;
+        left: 50%;
+    }
+    .button{
+        margin:0 5vw;
+    }
+    .confirm-button{
+        width: 88vw;
+        display: flex;
+        align-items: center;
+        background-color:#3F9CDA;
+        border-radius: 10px;
+        height: 7vh;
+        .confirm{
+            margin: auto;
+            font-family: 'rubik';
+            font-size: 20px;
+        }
+    }
+
+}

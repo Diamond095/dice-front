@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+.training{ 
+    height: 100vh;
+    font-family: "Exo 2", sans-serif;
+    background-image: url('../../app/assets/default-background.jpg');
+    background-size: 100vw, 20vh;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    overflow: hidden;
+
+.slider-container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .slide {
+    padding: 20px;
+    font-size: 24px;
+    background-color:rgb(217, 217, 217, 25%);
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .slide-text{
+    font-size: 24px;
+    text-align: center;
+    .text{
+        margin: 0.7vh;
+    }
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin:3vh 0;
+  }
+  .gif-block{
+    width: 70vw;
+    padding:30vh 0px 0;
+    margin: 0 auto;
+    overflow: hidden; 
+    position: relative; 
+    .gif{
+        width: 70vw;
+        object-fit: cover;
+        object-position: bottom;
+    }
+  }
+  .img-block{
+    .img{
+        width: 100%;
+        object-position: bottom;
+        object-fit: cover;
+        height: 55vh;
+    }
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(217, 217, 217, 25%);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: white;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .next-button {
+    border: solid 1px;
+    padding: 10px 10px;
+    width: 40vw;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 0 70px rgb(255, 255, 255, );
+  }
+  .bottom{
+    position:absolute;
+    bottom: 4vh;
+    left: 27vw;
+  }
+  @media (max-height: 700px) {
+    .gif-block{
+        width: 70vw;
+        padding:22vh 0px 0;
+        margin: 0 auto;
+    }
+    .img-block{
+        .img{
+            width: 100%;
+            object-position: bottom;
+            object-fit: cover;
+            height: 46vh;
+        }
+      }
+  }
+}

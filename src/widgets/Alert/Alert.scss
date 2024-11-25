@@ -1,0 +1,36 @@
+
+
+.alert {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    background-color: #182227;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    margin: 1rem;
+    z-index: 2;
+    padding-top: 1.5rem;
+}
+.icon {
+    width: 1.25rem; 
+    height: 1.25rem; 
+    text-align: center;
+    margin-right: 0.75rem; 
+  }
+  
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+

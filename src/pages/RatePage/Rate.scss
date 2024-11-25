@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.info-rate{
+    padding: 0.5rem;
+    text-align: center;
+    background-color:#182227;
+    border-radius: 20px;
+    width: 35vw;
+    height: 18.5px;
+}
+.rate-top{
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 2.5vw 5vw;
+}
+.rate{
+    width: 90%;
+    height: 65vh;
+    border: #243239 solid 2px;
+    margin: auto;
+    background-color: #182227;
+    border-radius: 1.25rem;
+    .photo-user{
+        width:10vw;
+        margin: 0.4rem;
+        border: solid 1.6px;
+        border-radius: 10vw;
+    }
+    .photo-frame{
+        border-radius: 10vw;
+    }
+    .info{
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+    }
+    .field{
+        padding: 0.4rem;
+        width: 17vw;
+    }
+    .name {
+        width: 30vw;
+        z-index: 2;
+        font-size: 16px;
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .place{
+        font-family: "Exo 2", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        width: 8vw;
+        text-align: center;
+        font-style: normal;
+      }
+    .your-stat{
+        width:90%;
+        position: absolute;
+        bottom: 14%;
+        left: 2.5%;
+        background-color: #182227;
+        border: solid 1px #ffffff;
+        border-radius: 10px;
+        z-index: 2;
+
+    }
+}
+.users{
+  display: flex;
+  background-color: #182227;
+  border-radius: 1.14rem;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  overflow-y: scroll;
+  height: 58vh;
+  .users {
+    position: relative;
+    &:not(:last-child)::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 2.5%;
+      height: 1px;
+      background: #fff;
+    }
+  }
+}

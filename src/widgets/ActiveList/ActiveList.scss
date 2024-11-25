@@ -1,0 +1,31 @@
+.ActiveListWrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #182227;
+  border-radius: 1.25rem;
+  padding: 0 1.25rem;
+  gap: 1rem;
+  height: 100%;
+
+  .ActiveGameWrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(255, 255, 255, 0.75) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+}

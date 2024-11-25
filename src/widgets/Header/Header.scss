@@ -1,0 +1,150 @@
+.Header {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 1.5rem 1rem;
+  .burn{
+    margin: 0 2vw;
+    width: 20vw;    
+    background: #141D21;
+    border-radius: 2vh;
+    .burn-elements{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 17vw;
+      margin: 1vh 2vw;
+      .burn-number{
+        font-size: 16px;
+      }
+      .burn-icon{
+        width: 4vw;
+      }
+    }
+  }
+  .wallet{
+    background: #141D21;
+    width: 44vw;
+    border-radius: 15px;
+  }
+  .wallet-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5.5vh;
+  }
+  .balance-slider {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    justify-content: space-between;
+    margin: 0.4rem;
+  }
+
+  .balance-column {
+    display: flex;
+    align-items: center;
+    display: flex;
+    background: #141D21;
+    border-radius:0 0 0.5rem 0.5rem;
+    padding: 0.3rem 0.5rem;
+    justify-content: space-between;
+    width: 30vw;
+    width: fit-content;
+    color: rgb(255,255,255,50%);
+  }
+
+  .balance-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    font-size: 12px;
+    padding: 0 0.2rem;
+    
+    gap: 0.35rem;
+  }
+
+  .not-selected {
+    border-radius: 0.1rem 0.1rem 0.1rem;
+    img{
+      width:3vw;
+      opacity: 50%;
+    }
+  }
+
+  .balance-icon {
+    width: 1.2rem;
+    margin-bottom: 0.1rem;
+  }
+  .separate-line {
+    width: 1px;
+    height: 4vh;
+    margin: 1.5vh 0;
+    background: #3b4a50;
+  }
+
+  .points {
+
+    .point {
+      margin: 0.5vh 1vw;
+      width: 1.5vw;
+      height: 0.75vh;
+      background: #fff;
+      border-radius: 0.75vw 0.375vh 0.75vw 0.375vh;
+    }
+  }
+  .gorizont-separate{
+    width:37vw;
+    background: rgb(255,255,255,50%);
+    height: 1px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--logo {
+      height: 100%;
+      aspect-ratio: 1;
+
+      img {
+        height: 7.5vh;
+
+      }
+    }
+  }
+    &--wallet-balance {
+      height: 80%;
+      border-radius: 1.25rem;
+      color: #f1f1f1;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s ease;
+
+      &.expanded {
+        align-items: flex-start;
+      }
+    }
+    .wallet-icon{
+      margin:1vh 2vw;
+      width: 6vw;
+    }
+
+    &--wallet-link {
+      height: 100%;
+
+      aspect-ratio: 1;
+      border-radius: 1rem;
+      img {
+        width: 4vh;
+        height: 3.5vh;
+      }
+    }
+
+}

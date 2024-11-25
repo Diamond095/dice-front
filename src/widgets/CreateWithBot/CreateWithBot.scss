@@ -1,0 +1,35 @@
+.CreateWithBotWrapper {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.0509803922) inset;
+  background: #182227;
+  border-radius: 2.6vh;
+  padding: 2.2vh;
+  height: 20vh;
+  aspect-ratio: 1.25;
+  justify-content: space-between;
+  background-image: url("../../app/assets/DiceBlue.png");
+  background-size: 77vw;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 25vw) -4vw;
+
+  .CreateWithBot--text {
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+      font-size: 3.85vh;
+      font-weight: bold;
+
+
+      &-additional {
+        font-size: 1.76vh;
+        color:#767676;
+      }
+    }
+  }
+
+  .CreateWithBot--button {
+    width: 26vw;
+  }
+}
